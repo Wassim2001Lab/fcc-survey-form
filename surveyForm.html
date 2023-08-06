@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Computer science Survey Form</h1>
+    <p id="description">Thank you for taking time to help us chose our path</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      
+        <label id="name-label" for="name">Enter Your First Name: <input id="name" type="text" required placeholder="Enter your name"/></label>
+
+
+
+
+        <label id="email-label" for="email">Enter Your Email: <input id="email" type="email"  required placeholder="Enter your email" /></label>
+
+
+
+
+        <label id="number-label" for="number">Input your age (years): <input id="number" type="number" min="13" max="120" placeholder="Age"/></label>
+
+
+
+
+
+
+
+        <label id="level-label">what level would describe youe currant level best:
+          <select id="dropdown" required>
+            <option value="1">beginner</option>
+            <option value="2">intermediate</option>
+            <option value="3">expert</option>
+            <option value="4">master</option>
+          </select>
+        </label>
+
+
+
+
+       <fieldset>
+        <label>what fields did you dabble in ? (Check all that apply)</label>
+        <label for="field"><input id="field" type="checkbox" value="0" class="inline" />Front-end devlopment</label>
+        <label for="field"><input id="field" type="checkbox" value="1" class="inline" />Back-end devlopment</label>
+        <label for="field"><input id="field" type="checkbox" value="2" class="inline" />Game devlopment</label>
+        <label for="field"><input id="field" type="checkbox" value="0" class="inline" />mobile-app devlopment</label>
+        <label for="field"><input id="field" type="checkbox" value="1" class="inline" />data science</label>
+        <label for="field"><input id="field" type="checkbox" value="2" class="inline" />cyber-security</label>
+        <label for="field"><input id="field" type="checkbox" value="2" class="inline" />networking</label>
+
+
+
+
+
+        <label>do you recommend computer sciance ?</label>
+        <label for="yes"><input id="yes" type="radio" name="recommend" value="1" class="inline" />yes</label>
+        <label for="no"><input id="no" type="radio" name="recommend" value="2" class="inline" />no</label>
+      </fieldset>
+
+      <fieldset>     
+        <label for="explain">explain why do you did or didn't recommend it:
+          <textarea id="explain"  rows="3" cols="30" placeholder="i don't like coding..."></textarea>
+        </label>
+      </fieldsest>
+      <input  id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
